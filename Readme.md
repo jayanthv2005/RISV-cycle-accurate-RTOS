@@ -15,7 +15,7 @@ This project is intentionally minimal and mechanism-driven, built to show **how 
 
 # RTOS Architecture
 
-![RTOS Architecture](images/rtos_architecture.png.png)
+![RTOS Architecture](images/rtos_architecture)
 
 # Context Switching
 
