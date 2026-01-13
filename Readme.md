@@ -18,6 +18,26 @@ academic research, interviews, and embedded systems learning.
 
   
 ## Architecture Overview
-Tasks → Scheduler → Context Switch → RISC-V Core
-↑ ↓
-Machine Timer Interrupt (CLINT)
++------------------+
+| User Tasks |
++------------------+
+|
+v
++------------------+
+| Scheduler | (Round-Robin, Preemptive)
++------------------+
+|
+v
++------------------+
+| Context Switch | (RV32I Assembly)
++------------------+
+|
+v
++------------------+
+| RISC-V Core |
++------------------+
+^
+|
++------------------+
+| Machine Timer | (CLINT / mtimecmp)
++------------------+
