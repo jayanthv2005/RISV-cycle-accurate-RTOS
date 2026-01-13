@@ -12,15 +12,22 @@ This project is intentionally minimal and mechanism-driven, built to show **how 
 - No heap, no dynamic allocation
 - Bare-metal execution on QEMU `virt`
 
----
 
-## Architecture:
-Machine Timer Interrupt
-↓
-Scheduler (O(1))
-↓
-Assembly Context Switch
-↓
-Next Task
+# RTOS Architecture
+
+![RTOS Architecture](images/rtos_architecture.png.png)
+
+# Context Switching
+
+![Context Switch Stack Layout](images/context_switch_stack.png.png)
+
+# Preemptive Scheduling
+
+![Preemptive Scheduling Timeline](images/preemptive_timeline.png.png)
+
+# Cycle Analysis
+
+![CLINT Timer Interrupt Flow](images/clint_timer_flow.png.png)
+
 
 This project focuses on **mechanisms, not APIs** — how an RTOS actually works at the hardware boundary.
