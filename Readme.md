@@ -20,15 +20,15 @@ This project is intentionally minimal and mechanism-driven, built to show **how 
 
 # Context Switching
 
-![Context Switch Stack Layout](images/context_switch_stack.png.png)
+![Context Switch Stack Layout](images/context_switch_stack)
 
 # Preemptive Scheduling
 
-![Preemptive Scheduling Timeline](images/preemptive_timeline.png.png)
+![Preemptive Scheduling Timeline](images/preemptive_timeline)
 
 # Cycle Analysis
 
-![CLINT Timer Interrupt Flow](images/clint_timer_flow.png.png)
+![CLINT Timer Interrupt Flow](images/clint_timer_flow)
 
 
 This project focuses on **mechanisms, not APIs** — how an RTOS actually works at the hardware boundary.
