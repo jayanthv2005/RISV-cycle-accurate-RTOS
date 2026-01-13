@@ -18,26 +18,12 @@ academic research, interviews, and embedded systems learning.
 
   
 ## Architecture Overview
-+------------------+
-| User Tasks |
-+------------------+
-|
-v
-+------------------+
-| Scheduler | (Round-Robin, Preemptive)
-+------------------+
-|
-v
-+------------------+
-| Context Switch | (RV32I Assembly)
-+------------------+
-|
-v
-+------------------+
-| RISC-V Core |
-+------------------+
-^
-|
-+------------------+
-| Machine Timer | (CLINT / mtimecmp)
-+------------------+
+Machine Timer Interrupt
+↓
+Scheduler (O(1))
+↓
+Assembly Context Switch
+↓
+Next Task
+
+This project focuses on **mechanisms, not APIs** — how an RTOS actually works at the hardware boundary.
