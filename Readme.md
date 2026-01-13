@@ -15,3 +15,9 @@ academic research, interviews, and embedded systems learning.
 - Deterministic context switch latency
 - QEMU virt platform support
 - Clean, silicon-grade repository structure
+
+  
+## Architecture Overview
+Tasks → Scheduler → Context Switch → RISC-V Core
+↑ ↓
+Machine Timer Interrupt (CLINT)
